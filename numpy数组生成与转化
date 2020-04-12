@@ -14,3 +14,7 @@ Out[86]: array([ 1,  6,  9, 10,  3,  4], dtype=int8)
 In [88]: e=d.astype(np.float64)#用astype可以进行显式转换
 In [89]: e
 Out[89]: array([ 1.,  6.,  9., 10.,  3.,  4.])
+In [90]: np.zeros(5)
+Out[90]: array([0., 0., 0., 0., 0.])#生成以0为元素的ndarray数组
+In [91]: np.ones(4)
+Out[91]: array([1., 1., 1., 1.])#生成以1为元素的ndarray数组
