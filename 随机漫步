@@ -1,0 +1,14 @@
+In [172]: position=0
+
+In [173]: walk=[position]
+
+In [174]: steps=1000
+In [176]: for i in range(steps):
+     ...:     step=1 if np.random.randint(0,1) else -1
+     ...:     position+=step
+     ...:     walk.append(position)
+In [176]: for i in range(steps):
+     ...:     step=1 if np.random.randint(0,1) else -1
+     ...:     position+=step
+     ...:     walk.append(position)
+plt.plot(walk[:100])
