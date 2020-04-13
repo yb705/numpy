@@ -1,0 +1,9 @@
+In [115]: a
+Out[115]: array(['bike', 'bus', 'plane', 'boat', 'bus', 'taxi', 'bike'], dtype='<U5')
+In [116]: np.unique(a)#去重，返回唯一值
+Out[116]: array(['bike', 'boat', 'bus', 'plane', 'taxi'], dtype='<U5')
+In [118]: b=np.array(['bike','bicycle','taxi'])
+In [119]: b
+Out[119]: array(['bike', 'bicycle', 'taxi'], dtype='<U7')
+In [121]: np.in1d(a,b)#检查b的值是否在a中，返回bool数组
+Out[121]: array([ True, False, False, False, False,  True,  True])
