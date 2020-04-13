@@ -1,0 +1,19 @@
+In [104]: a
+Out[104]:
+array([[ 0.02980723,  0.4299543 ,  0.82507371],
+       [ 0.48511598, -2.0459323 ,  0.72716357],
+       [ 0.18012475,  1.25415799,  0.2602987 ],
+       [-0.86639334,  3.18723831,  0.01709771]])
+In [105]: (a>0).sum()#直接以条件进行筛选求和，统计数值大于0的元素的个数
+Out[105]: 10
+In [106]: bools=np.where(a>0,True,False)
+In [107]: bools
+Out[107]:
+array([[ True,  True,  True],
+       [ True, False,  True],
+       [ True,  True,  True],
+       [False,  True,  True]])
+In [108]: bools.any()#bool数组中有一个是True就为True
+Out[108]: True
+In [109]: bools.all()#bool数组中所有元素全是True就为True
+Out[109]: False
